@@ -1,0 +1,82 @@
+.underline-hover-effect {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-hover-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #FF9209;
+    transition: width 0.5s ease-out;
+}
+
+.underline-hover-effect:hover::before {
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    #hero-text {
+        font-size: 2.5em !important;
+    }
+
+    .services-images {
+        width: 25% !important;
+    }
+
+    .services-cols {
+        display: flex;
+        justify-content: center;
+    }
+
+    #why-genesis {
+        background-color: #0f0b33 !important;
+        padding-bottom: 80px !important;
+    }
+
+    #genesis-image-parent {
+        display: none !important;
+    }
+
+    #d-none-at-small {
+        width: 100% !important;
+        padding: 10px 5px !important;
+    }
+
+    #responsive-hide {
+        display: none !important;
+    }
+
+    #about-section {
+        background-color: #0f0b33;
+        padding-top: 0px !important;
+        padding-bottom: 290px !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #about-fonts {
+        font-size: 1rem;
+    }
+
+    .about-para {
+        width: 92%;
+        padding-left: 15px !important;
+    }
+
+    #img-work-none {
+        display: none;
+    }
+    #two-id{
+        width: 44%;
+    }
+    .navbar-brand{
+        padding: 0px;
+    }
+}
